@@ -16,7 +16,7 @@ Go to AWS serverless application repository to navigate to the deployment
 ![search_appication](https://github.com/shunyeka/Trend-Micro-SNS-Log-Provider/blob/main/images/search_appication.jpg)
    Click on the deploy button to deploy the serverless application.
    
-After deployment a new SNS Topic will be created, need to take AWS SNS Topic `ARN` from this newly created SNS Topic, this ARN along with Access and Secret Keys are required for connecting with Trend Micro Deep Security, all those required data are added inside `Administration>Event Forwarding>Amazon SNS` field
+After deployment a new SNS Topic will be created, need to take AWS SNS Topic `ARN` from this newly created SNS Topic, this ARN along with Access and Secret Keys are required for connecting with Trend Micro Deep Security, we can get or create keys from `IAM User`, all those required data are added inside `Administration>Event Forwarding>Amazon SNS` field
 
 
 ![get_arn](https://github.com/shunyeka/Trend-Micro-SNS-Log-Provider/blob/main/images/get_arn.jpg)
