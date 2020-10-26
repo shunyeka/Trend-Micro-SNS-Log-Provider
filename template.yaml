@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: >
+  Trend-Micro-SNS-Log-Provider
+  This serverless application integrates with Trend Micro Deep Security which send event notification to AWS CloudWatch using SNS and Lambda function.
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  trendmicrosnslogprovider:
+    Type: 'AWS::Serverless::Function' # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.8
+      CodeUri: s3://trend-micro-sns-log-provider-bucket/Trend-Micro-SNS-Log-Provider-1.0.0.zip
+      MemorySize: 128
+      Timeout: 10
+
+      Events:
+        SNS1:
+          Type: SNS
+          Properties:
+            Topic:
+              Ref: SNSTopic1
+  SNSTopic1:
+    Type: 'AWS::SNS::Topic'
