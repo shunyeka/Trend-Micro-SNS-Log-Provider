@@ -15,10 +15,10 @@ Go to AWS serverless application repository to navigate to the deployment
    Click on the deploy button to deploy the serverless application.
 
 Trend Micro Provide Different Services which are:
-1. Workload Security
-2. Application Security
-3. Cloud Conformity
-4. Deep Security Smart Check 
+1. [Workload Security](https://github.com/shunyeka/Trend-Micro-SNS-Log-Provider/blob/main/README.md#1-workload-security)
+2. [Application Security](https://github.com/shunyeka/Trend-Micro-SNS-Log-Provider/blob/main/README.md#2-application-security)
+3. [Cloud Conformity](https://github.com/shunyeka/Trend-Micro-SNS-Log-Provider/blob/main/README.md#3-cloud-conformity)
+4. [Deep Security Smart Check](https://github.com/shunyeka/Trend-Micro-SNS-Log-Provider/blob/main/README.md#4-deep-security-smart-check)
 
 Based on Sevice need to do some configuration.
 
